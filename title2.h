@@ -19,6 +19,8 @@ public:
     void mouseMoveEvent(QMouseEvent *event);
     void mouseReleaseEvent(QMouseEvent *event);
     void on_pushButton_3_clicked();
+    void setLable(const QString &text);
+    void seticon(const QString &line);
 
 private slots:
 

@@ -26,15 +26,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         widget.cpp \
-    title2.cpp
+    title2.cpp \
+    title.cpp \
+    zhong.cpp
 
 HEADERS += \
         widget.h \
-    title2.h
+    title2.h \
+    title.h \
+    zhong.h
 
 FORMS += \
         widget.ui \
-    title2.ui
+    title2.ui \
+    title.ui \
+    zhong.ui
 
 RESOURCES += \
     resource.qrc

@@ -43,6 +43,9 @@ void title2::mouseMoveEvent(QMouseEvent *event){
         }
 
 }
+void title2::setLable(const QString &text){
+    ui->label->setText(text);
+}
 
 void title2::mouseReleaseEvent(QMouseEvent *event){
     if(event->button()==Qt::LeftButton)
@@ -52,6 +55,11 @@ void title2::mouseReleaseEvent(QMouseEvent *event){
 }
 void title2::on_pushButton_3_clicked(){
 
+}
+
+void title2::seticon(const QString &line){
+    QIcon icon(line);
+    ui->pushButton_3->setIcon(icon);
 }
 
 void title2::onClicked(){

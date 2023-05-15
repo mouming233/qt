@@ -17,6 +17,9 @@ Widget::Widget(QWidget *parent) :
    layout->setMargin(0);
 
 
+   connect()
+
+
 }
 
 Widget::~Widget()
