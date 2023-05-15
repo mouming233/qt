@@ -2,6 +2,7 @@
 #include "ui_title2.h"
 #include <QDebug>
 #include <QMouseEvent>
+#include"zhong.h"
 title2::title2(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::title2)
@@ -11,6 +12,9 @@ title2::title2(QWidget *parent) :
     connect(ui->pushButton,SIGNAL(clicked(bool)),this, SLOT(onClicked()));
     connect(ui->pushButton_2,SIGNAL(clicked(bool)),this, SLOT(onClicked()));
     connect(ui->pushButton_3,SIGNAL(clicked(bool)),this, SLOT(onClicked()));
+    connect(this,&title2::clicked123,[=]{
+//        title2::setLable("nihao");
+    });
 }
 
 title2::~title2()
@@ -54,8 +58,14 @@ void title2::mouseReleaseEvent(QMouseEvent *event){
     }
 }
 void title2::on_pushButton_3_clicked(){
-
+    emit clicked123();
 }
+//void title2::pushbutton(int &a){
+//    if(a==1)
+//    {
+
+//    }
+//}
 
 void title2::seticon(const QString &line){
     QIcon icon(line);
@@ -76,6 +86,11 @@ void title2::onClicked(){
            {
                pWindow->close();
            }
+           else if(pButton==ui->pushButton_3)
+           {
+                   emit clicked123();
+
+       }
 
        }
 

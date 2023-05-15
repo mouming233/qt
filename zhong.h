@@ -34,12 +34,18 @@ public:
     ~zhong();
     void paintEvent(QPaintEvent * ev);
 
+
 private slots:
     void on_pushButton_5_clicked();
+
+    void dealslot();
+
+
 
 private:
     Ui::zhong *ui;
     title2 *t2;
+    Widget *gui2=new Widget;
 };
 
 #endif // ZHONG_H

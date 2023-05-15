@@ -21,10 +21,13 @@ public:
     void on_pushButton_3_clicked();
     void setLable(const QString &text);
     void seticon(const QString &line);
+    void pushbutton(int &a);
 
 private slots:
 
     void onClicked();
+signals:
+    void clicked123();
 
 private:
     Ui::title2 *ui;

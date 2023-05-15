@@ -35,9 +35,12 @@ public:
 private slots:
     void on_open_clicked();
 
+signals:
+    void ChangeUISLot();
+
 private:
     Ui::Widget *ui;
-    title2 *t1;
+    title2 *t1=new title2;
 
 
 
