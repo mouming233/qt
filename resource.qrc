@@ -1,1 +1,16 @@
-<RCC/>
+<RCC>
+    <qresource prefix="/">
+        <file>background.jpg</file>
+        <file>background1.jpg</file>
+        <file>background2.jpg</file>
+        <file>zhuye.jpg</file>
+        <file>back_1.png</file>
+        <file>关闭.ico</file>
+        <file>关闭.png</file>
+        <file>关闭2.png</file>
+        <file>最小化.png</file>
+        <file>返回 (1).png</file>
+        <file>guanbi.png</file>
+        <file>zuixiaohua.png</file>
+    </qresource>
+</RCC>

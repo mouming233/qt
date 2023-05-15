@@ -4,10 +4,10 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-
+CONFIG += resources_big
 TARGET = QTmodel
 TEMPLATE = app
 
@@ -25,10 +25,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        widget.cpp
+        widget.cpp \
+    title2.cpp
 
 HEADERS += \
-        widget.h
+        widget.h \
+    title2.h
 
 FORMS += \
-        widget.ui
+        widget.ui \
+    title2.ui
+
+RESOURCES += \
+    resource.qrc
