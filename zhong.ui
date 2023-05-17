@@ -115,12 +115,25 @@
 background-color: rgb(221, 221, 221);
 border:2px groove gray;
 border-radius:30px;padding:2px 4px;
+	font: 18pt &quot;楷体&quot;;
+	color: rgb(255, 255, 255);
+	background-color: rgb(51, 73, 93);
 border-style: outset;}
 QPushButton:hover{background-color:rgb(229, 241, 251); color: black;}
 QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</string>
         </property>
         <property name="text">
          <string>系统设置</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/设置.png</normaloff>:/设置.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
         </property>
        </widget>
       </item>
@@ -137,12 +150,25 @@ QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</s
 background-color: rgb(221, 221, 221);
 border:2px groove gray;
 border-radius:30px;padding:2px 4px;
+	font: 18pt &quot;楷体&quot;;
+	color: rgb(255, 255, 255);
+	background-color: rgb(3, 112, 87);
 border-style: outset;}
 QPushButton:hover{background-color:rgb(229, 241, 251); color: black;}
 QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</string>
         </property>
         <property name="text">
          <string>模式切换</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/切换.png</normaloff>:/切换.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
         </property>
        </widget>
       </item>
@@ -226,6 +252,9 @@ background-color: rgb(221, 221, 221);
 border:2px groove gray;
 border-radius:30px;padding:2px 4px;
 border-style: outset;
+	background-color: rgb(155, 89, 186);
+	font: 18pt &quot;楷体&quot;;
+	color: rgb(255, 255, 255);
 
 }
 QPushButton:hover{background-color:rgb(229, 241, 251); color: black;}
@@ -234,6 +263,16 @@ QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</s
         <property name="text">
          <string>中央调度系统</string>
         </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/SWAN 控制.png</normaloff>:/SWAN 控制.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
        </widget>
       </item>
      </layout>
@@ -241,6 +280,8 @@ QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</s
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -13,5 +13,8 @@
         <file>guanbi.png</file>
         <file>zuixiaohua.png</file>
         <file>tb.ico</file>
+        <file>设置.png</file>
+        <file>切换.png</file>
+        <file>SWAN 控制.png</file>
     </qresource>
 </RCC>

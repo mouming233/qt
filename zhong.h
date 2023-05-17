@@ -40,6 +40,8 @@ private slots:
 
     void dealslot();
 
+    void tongslot();
+
 
 
 private:

@@ -44,3 +44,6 @@ FORMS += \
 
 RESOURCES += \
     resource.qrc
+
+DISTFILES += \
+    SWAN 控制.png

@@ -18,7 +18,7 @@ zhong::zhong(QWidget *parent) :
 //   layout->addWidget(ui->widget);
 
    connect(gui2,&Widget::ChangeUISLot,this,&zhong::dealslot);
-
+   connect(gui2,&Widget::tongshiSlot,this,&zhong::tongslot);
    //设置垂直布局间隙
    layout->setSpacing(0);
    layout->setMargin(0);
@@ -27,6 +27,10 @@ zhong::zhong(QWidget *parent) :
 void zhong::dealslot(){
     this->show();
     gui2->hide();
+}
+void zhong::tongslot(){
+    this->show();
+//    gui2->hide();
 }
 
 zhong::~zhong()

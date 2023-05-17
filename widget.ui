@@ -1105,7 +1105,7 @@ QPushButton:hover{background-color:rgb(229, 241, 251); color: black;}
 QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</string>
            </property>
            <property name="text">
-            <string>隐藏</string>
+            <string>中央界面</string>
            </property>
           </widget>
          </item>
