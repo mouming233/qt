@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1149</width>
-    <height>682</height>
+    <width>1476</width>
+    <height>903</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,14 +18,14 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>1149</width>
-    <height>682</height>
+    <width>0</width>
+    <height>0</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>1149</width>
-    <height>682</height>
+    <width>99999</width>
+    <height>99999</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -75,7 +75,8 @@
       <item>
        <widget class="QGroupBox" name="groupBox">
         <property name="styleSheet">
-         <string notr="true">QGroupBox { font-size: 20px; color: white;font-weight: bold }</string>
+         <string notr="true">QGroupBox { font-size: 20px; color: white;font-weight: bold }
+font: 16pt &quot;Adobe Arabic&quot;;</string>
         </property>
         <property name="title">
          <string>消息列表</string>
@@ -84,7 +85,7 @@
          <item>
           <widget class="QScrollArea" name="scrollArea">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -109,8 +110,8 @@
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>278</width>
-              <height>222</height>
+              <width>438</width>
+              <height>312</height>
              </rect>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout">
@@ -148,6 +149,12 @@
       </item>
       <item>
        <widget class="QGroupBox" name="groupBox_2">
+        <property name="maximumSize">
+         <size>
+          <width>500</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QGroupBox { font-size: 20px; color: white;font-weight: bold }</string>
         </property>
@@ -391,6 +398,12 @@ background-color:white;
           <height>0</height>
          </size>
         </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QGroupBox { font-size: 20px; color: white;font-weight: bold }</string>
         </property>
@@ -408,7 +421,7 @@ background-color:white;
            </property>
            <property name="styleSheet">
             <string notr="true">color:white;
-font-size: 18px</string>
+font: 14pt &quot;Adobe Arabic&quot;;</string>
            </property>
            <property name="text">
             <string> 客户端IP</string>
@@ -416,7 +429,14 @@ font-size: 18px</string>
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="keIP"/>
+          <widget class="QLineEdit" name="keIP">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
          </item>
          <item>
           <widget class="QLabel" name="label_4">
@@ -428,7 +448,9 @@ font-size: 18px</string>
            </property>
            <property name="styleSheet">
             <string notr="true">color:white;
-font-size: 18px</string>
+font: 14pt &quot;Adobe Arabic&quot;;
+
+</string>
            </property>
            <property name="text">
             <string> 客户端端口</string>
@@ -452,7 +474,13 @@ font-size: 18px</string>
         <property name="minimumSize">
          <size>
           <width>450</width>
-          <height>200</height>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>600</width>
+          <height>999999</height>
          </size>
         </property>
         <property name="styleSheet">
@@ -462,104 +490,8 @@ font-size: 18px</string>
          <string>小车参数</string>
         </property>
         <layout class="QGridLayout" name="gridLayout_2">
-         <item row="2" column="5">
-          <widget class="QLineEdit" name="daohang">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>25</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="4">
-          <widget class="QLabel" name="label_10">
-           <property name="styleSheet">
-            <string notr="true">color:white;
-font-size: 18px</string>
-           </property>
-           <property name="text">
-            <string>导航故障</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="4">
-          <widget class="QLabel" name="label_12">
-           <property name="styleSheet">
-            <string notr="true">color:white;
-font-size: 18px</string>
-           </property>
-           <property name="text">
-            <string>电量</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="5">
-          <widget class="QLineEdit" name="dianliang">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>25</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="2">
-          <widget class="QLineEdit" name="angle">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>25</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="1">
-          <widget class="QLabel" name="label_7">
-           <property name="styleSheet">
-            <string notr="true">color:white;
-font-size: 18px</string>
-           </property>
-           <property name="text">
-            <string>角度</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLabel" name="label_5">
-           <property name="styleSheet">
-            <string notr="true">color:white;
-font-size: 18px</string>
-           </property>
-           <property name="text">
-            <string>编号</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2">
-          <widget class="QLineEdit" name="hao">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>25</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="5">
-          <widget class="QLineEdit" name="zhuangtai">
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="x">
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -581,8 +513,8 @@ font-size: 18px</string>
            </property>
           </spacer>
          </item>
-         <item row="1" column="2">
-          <widget class="QLineEdit" name="x">
+         <item row="0" column="5">
+          <widget class="QLineEdit" name="zhuangtai">
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -591,27 +523,25 @@ font-size: 18px</string>
            </property>
           </widget>
          </item>
-         <item row="1" column="6">
-          <spacer name="horizontalSpacer_6">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
+         <item row="1" column="5">
+          <widget class="QLineEdit" name="yundong">
+           <property name="minimumSize">
             <size>
-             <width>10</width>
-             <height>20</height>
+             <width>0</width>
+             <height>25</height>
             </size>
            </property>
-          </spacer>
+          </widget>
          </item>
-         <item row="2" column="1">
-          <widget class="QLabel" name="label_6">
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_5">
            <property name="styleSheet">
             <string notr="true">color:white;
-font-size: 18px</string>
+font-size: 18px
+</string>
            </property>
            <property name="text">
-            <string>Y坐标</string>
+            <string>编号</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -632,6 +562,16 @@ font-size: 18px</string>
            </property>
           </widget>
          </item>
+         <item row="3" column="2">
+          <widget class="QLineEdit" name="angle">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>25</height>
+            </size>
+           </property>
+          </widget>
+         </item>
          <item row="1" column="4">
           <widget class="QLabel" name="label_9">
            <property name="styleSheet">
@@ -643,16 +583,6 @@ font-size: 18px</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="5">
-          <widget class="QLineEdit" name="yundong">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>25</height>
-            </size>
            </property>
           </widget>
          </item>
@@ -670,8 +600,8 @@ font-size: 18px</string>
            </property>
           </widget>
          </item>
-         <item row="2" column="2">
-          <widget class="QLineEdit" name="y">
+         <item row="2" column="5">
+          <widget class="QLineEdit" name="daohang">
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -696,6 +626,105 @@ font-size: 18px</string>
            </property>
           </spacer>
          </item>
+         <item row="1" column="6">
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>10</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="3" column="5">
+          <widget class="QLineEdit" name="dianliang">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>25</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLabel" name="label_7">
+           <property name="styleSheet">
+            <string notr="true">color:white;
+font-size: 18px</string>
+           </property>
+           <property name="text">
+            <string>角度</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="4">
+          <widget class="QLabel" name="label_12">
+           <property name="styleSheet">
+            <string notr="true">color:white;
+font-size: 18px</string>
+           </property>
+           <property name="text">
+            <string>电量</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="hao">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>25</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="y">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>25</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="label_6">
+           <property name="styleSheet">
+            <string notr="true">color:white;
+font-size: 18px</string>
+           </property>
+           <property name="text">
+            <string>Y坐标</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLabel" name="label_10">
+           <property name="styleSheet">
+            <string notr="true">color:white;
+font-size: 18px</string>
+           </property>
+           <property name="text">
+            <string>导航故障</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
         </layout>
        </widget>
       </item>
@@ -715,7 +744,7 @@ font-size: 18px</string>
         </property>
         <property name="maximumSize">
          <size>
-          <width>400</width>
+          <width>500</width>
           <height>16777215</height>
          </size>
         </property>
@@ -760,6 +789,18 @@ font-size: 18px</string>
          </item>
          <item row="0" column="1">
           <widget class="QPushButton" name="wait">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
            <property name="styleSheet">
             <string notr="true">QPushButton{
 background-color: rgb(221, 221, 221);
@@ -836,6 +877,12 @@ QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</s
          </item>
          <item row="4" column="1">
           <widget class="QPushButton" name="get">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
            <property name="styleSheet">
             <string notr="true">QPushButton{
 background-color: rgb(221, 221, 221);
@@ -852,6 +899,12 @@ QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</s
          </item>
          <item row="2" column="1">
           <widget class="QPushButton" name="put">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
            <property name="styleSheet">
             <string notr="true">QPushButton{
 background-color: rgb(221, 221, 221);
@@ -963,7 +1016,7 @@ QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</s
            <property name="minimumSize">
             <size>
              <width>100</width>
-             <height>30</height>
+             <height>40</height>
             </size>
            </property>
            <property name="styleSheet">
@@ -1001,7 +1054,7 @@ QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</s
            <property name="minimumSize">
             <size>
              <width>100</width>
-             <height>30</height>
+             <height>40</height>
             </size>
            </property>
            <property name="styleSheet">
@@ -1039,7 +1092,7 @@ QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</s
            <property name="minimumSize">
             <size>
              <width>100</width>
-             <height>30</height>
+             <height>40</height>
             </size>
            </property>
            <property name="styleSheet">
@@ -1052,7 +1105,7 @@ QPushButton:hover{background-color:rgb(229, 241, 251); color: black;}
 QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</string>
            </property>
            <property name="text">
-            <string>重新启动</string>
+            <string>视频传输</string>
            </property>
           </widget>
          </item>
@@ -1092,7 +1145,7 @@ QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</s
            <property name="minimumSize">
             <size>
              <width>100</width>
-             <height>30</height>
+             <height>40</height>
             </size>
            </property>
            <property name="styleSheet">
@@ -1133,7 +1186,7 @@ QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</s
            <property name="minimumSize">
             <size>
              <width>100</width>
-             <height>30</height>
+             <height>40</height>
             </size>
            </property>
            <property name="styleSheet">

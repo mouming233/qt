@@ -46,4 +46,5 @@ RESOURCES += \
     resource.qrc
 
 DISTFILES += \
-    SWAN 控制.png
+    SWAN 控制.png \
+    tu/camera.py

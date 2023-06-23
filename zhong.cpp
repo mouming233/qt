@@ -3,10 +3,12 @@
 
 
 
-zhong::zhong(QWidget *parent) :
+zhong::zhong(QWidget *parent):
     QWidget(parent),
-    ui(new Ui::zhong)
+    ui(new Ui::zhong),
+    gui2(new Widget)
 {
+
     ui->setupUi(this);
     setWindowFlags(Qt::FramelessWindowHint);
     t2=new title2(this);

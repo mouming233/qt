@@ -47,7 +47,7 @@ private slots:
 private:
     Ui::zhong *ui;
     title2 *t2;
-    Widget *gui2=new Widget;
+    Widget *gui2;
 };
 
 #endif // ZHONG_H

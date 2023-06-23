@@ -34,19 +34,54 @@
 #include <QProcess>
 #include <QDebug>
 #include"QThread"
+//#include"widget.h"
+#include"QVBoxLayout"
+#include"QtNetwork"
+#include"QMessageBox"
+#include <QtGlobal>
+class Widget;
 namespace Ui {
 class Widget;
 }
 
 class MyThread : public QThread
 {
+    Q_OBJECT
+
+signals:
+    void showMessageSignal(const QString& title, const QString& message);
 public:
-    MyThread();
+    MyThread(Widget *parentWidget);
     void stop();
+
+protected:
+    void run();
+    void handleProcessError(QProcess::ProcessError error);
+
+private:
+    Widget *widget;
+
+    volatile bool stopped;
+};
+
+
+class MyThread2 : public QThread
+{
+    Q_OBJECT
+public:
+//    explicit MyThread2(QObject *parent = nullptr) : QThread(parent), Server(nullptr) {}
+    MyThread2();
+    MyThread2(Widget *parentWidget);
+    void stop();
+    void handleNewConnection();
+    void handleReadyRead();
+    QTcpServer*Server;
+
 protected:
     void run();
 
 private:
+    Widget *widget;
 
     volatile bool stopped;
 };
@@ -61,7 +96,15 @@ public:
     ~Widget();
     void paintEvent(QPaintEvent * ev);
     void ip_get();
+    void ui_show(const QString &str,const QString &targetWidgetName);
 
+    void restartPythonProgram();
+
+    void showMessageSlot(const QString& title, const QString& message)
+        {
+            // 在主线程中显示 QMessageBox
+            QMessageBox::critical(this, title, message);
+        }
 
 private slots:
     void on_open_clicked();
@@ -72,10 +115,13 @@ private slots:
 
     void on_close_clicked();
 
+
+
+    void sendzuobiao(int a);
+
     void on_wait_clicked();
 
-
-    void sendzuobiao();
+    void on_restart_clicked();
 
 signals:
     void ChangeUISLot();
@@ -85,12 +131,11 @@ private:
     Ui::Widget *ui;
     title2 *t1=new title2;
 
-    MyThread thread;
+    MyThread *thread;
+    MyThread2 *thread2;
 
 
     QTcpSocket * tcpSocket;//用于传输数据的套接字
-
-
 
 };
 

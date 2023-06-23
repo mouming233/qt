@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1149</width>
-    <height>682</height>
+    <width>1476</width>
+    <height>777</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1476</width>
+    <height>0</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -126,7 +132,7 @@ QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</s
          <string>系统设置</string>
         </property>
         <property name="icon">
-         <iconset resource="resource.qrc">
+         <iconset>
           <normaloff>:/设置.png</normaloff>:/设置.png</iconset>
         </property>
         <property name="iconSize">
@@ -161,7 +167,7 @@ QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</s
          <string>模式切换</string>
         </property>
         <property name="icon">
-         <iconset resource="resource.qrc">
+         <iconset>
           <normaloff>:/切换.png</normaloff>:/切换.png</iconset>
         </property>
         <property name="iconSize">
@@ -264,7 +270,7 @@ QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</s
          <string>中央调度系统</string>
         </property>
         <property name="icon">
-         <iconset resource="resource.qrc">
+         <iconset>
           <normaloff>:/SWAN 控制.png</normaloff>:/SWAN 控制.png</iconset>
         </property>
         <property name="iconSize">
@@ -280,8 +286,6 @@ QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</s
    </item>
   </layout>
  </widget>
- <resources>
-  <include location="resource.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
